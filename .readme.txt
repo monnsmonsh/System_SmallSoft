@@ -1,0 +1,11 @@
+//Base
+-----------------------------
+Visual Studio Community 2019
+ver 16.6.5
+	Aplicacion web ASP.NET(.NET Framework)
+	.NET Framework 4.7.2
+-----------------------------
+Microsoft SQL Server Management Studio 18
+	v18.5.1
+-----------------------------
+

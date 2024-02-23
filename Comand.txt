@@ -1,0 +1,14 @@
+SQL SERVER utilizar pass : root
+(sql server no express)
+
+-----
+
+//comando para abilitar las migraciones con especificacion de tipo de db
+enable-migrations -ContextTypeName:SystemSmallSoft.Models.SmallSoftContext -MigrationsDirectory:Migrations
+
+//comando para----Crear un archivo para la primera migracion
+Add-Migration -configuration SystemSmallSoft.Migrations.Configuration SystemInitial
+
+//comando para mandar todo a la BD
+Update-Database -configuration:SystemSmallSoft.Migrations.Configuration -Verbose
+
