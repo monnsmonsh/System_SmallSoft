@@ -1,0 +1,128 @@
+﻿
+@model IEnumerable<SystemSmallSoft.Models.TblProducto>
+
+@{
+    ViewBag.Title = "Productos";
+    <!---->ViewBag.ProductosA = "active";
+}
+
+<!-- modal large -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="largeModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content">
+                    <!---->
+                    Cargando...
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modal large -->
+
+<div class="jumbotron" style="background-image: url(/Content/img/about-service.png); background-size: 100%;">
+    <div class="container">
+        <h1 class="display-3" _msthash="669669" _msttexthash="169715" style="color:dimgrey;">Productos</h1>
+
+    </div>
+</div>
+
+
+@if (Request.IsAuthenticated && User.IsInRole("Admin"))
+{
+<a class="btn btn-primary btn-lg" href="~/Productos/Create" role="button"><i class=" fa fa-plus"> </i> Nuevo Producto</a>
+}
+@if (Request.IsAuthenticated && User.IsInRole("Almacen"))
+{
+<a class="btn btn-primary btn-lg" href="~/Productos/Create" role="button"><i class=" fa fa-plus"> </i> Nuevo Producto</a>
+}
+<br>
+<br>
+
+<table id="tblListProductos" class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col"> </th>
+            <th scope="col">@Html.DisplayNameFor(model => model.SKU)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Descripcion)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.PrecioUnitario)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.TblCategorias.Nombre)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Stock)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Status)</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img width="50" src="@Url.Action("getImage/")@item.ProductoID" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SKU)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrecioUnitario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblCategorias.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        @*@Html.ActionLink("Edit", "Edit", new { id = item.ProductoID })*@
+
+                        <a href="~/Productos/Edit/@item.ProductoID" class="btn btn-danger btn-sm" style="background-color: #007bba; border-color: #007bba;"><i class=" fa fa-pencil-square-o"></i></a>
+                        
+                    }
+                    @if (Request.IsAuthenticated && User.IsInRole("Almacen"))
+                    {
+                        <a href="~/Productos/Edit/@item.ProductoID" class="btn btn-danger btn-sm" style="background-color: #007bba; border-color: #007bba;"><i class=" fa fa-pencil-square-o"></i></a>
+                    }
+
+                    <button href="#myModal" class="btnDetailsProducto btn btn-danger btn-sm" data-toggle="modal" data-id="@item.ProductoID" style="background-color: #28a745; border-color: #28a745;">
+                        <i class="fa fa-list-alt"></i>
+                    </button>
+
+
+
+                    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <button href="#myModal" class="btnDeleteProducto btn btn-danger btn-sm" data-toggle="modal" data-id="@item.ProductoID">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    }
+                    @if (Request.IsAuthenticated && User.IsInRole("Almacen"))
+                    {
+                        <button href="#myModal" class="btnDeleteProducto btn btn-danger btn-sm" data-toggle="modal" data-id="@item.ProductoID">
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    }
+
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

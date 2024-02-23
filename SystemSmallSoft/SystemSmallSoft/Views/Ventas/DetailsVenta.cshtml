@@ -1,0 +1,27 @@
+﻿@model List<SystemSmallSoft.Models.TblDetalleVenta>
+
+@{
+    Layout = null;
+    <!---->ViewBag.VentasA = "active";
+}
+
+<h2>Articulos de la venta </h2>
+
+<table class="table">
+    <tr>
+        <th>ProductName</th>
+        <th>Quantity</th>
+        <th>UnitPrice</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TblProductos.Descripcion</td>
+            <td>@item.Cantidad</td>
+            <td>@item.PrecioUnitario</td>
+
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,50 @@
+﻿
+@model IEnumerable<SystemSmallSoft.Models.TblCliente>
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Reportes.cshtml";
+}
+
+    <div class="row">
+        <div class="col-md-4"><img class="mb-4" src="~/Content/img/logoSmallSoft.png" alt="" width="300"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h1 class="display-5">Reporte de Clientes</h1>
+            <p class="lead2">Plaza Heroes Local B-2</p>
+            <p class="lead2">Ribera del Rio #00 Col Centro</p>
+            <p class="lead2">Telefono (477) 123 4567</p>
+            <p class="lead2">securitysystem@smallsoft.com.mx</p>
+        </div>
+    </div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.RFC)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Direccion)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Telefono)</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.Correo)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ApPaterno) @Html.DisplayFor(modelItem => item.ApMaterno) @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.RFC)
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.Direccion)
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.Telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Correo)
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>

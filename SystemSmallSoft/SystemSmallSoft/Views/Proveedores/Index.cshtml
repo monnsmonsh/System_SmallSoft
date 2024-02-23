@@ -1,0 +1,117 @@
+﻿
+@model IEnumerable<SystemSmallSoft.Models.TblProveedor>
+
+@{
+    ViewBag.Title = "Proveedores";
+    <!---->ViewBag.ProveedoresA = "active";
+}
+<!-- modal large -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="largeModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content">
+                    <!---->
+                    Cargando...
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modal large -->
+
+<div class="jumbotron" style="background-image: url(/Content/img/about-service.png); background-size: 100%;">
+    <div class="container">
+        <h1 class="display-3" _msthash="669669" _msttexthash="169715" style="color:dimgrey;">Proveedores</h1>
+    </div>
+</div>
+
+
+
+<a class="btn btn-primary btn-lg" href="~/Proveedores/Create" role="button"><i class=" fa fa-plus"> </i> Nuevo Proveedor</a>
+
+@*<a id="btnNewCliente" data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">nnn</a>*@
+<br>
+<br>
+
+
+<table id="tblListProveedores" class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.RazonSocial)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.RUC)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Celular)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Representante)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RazonSocial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RUC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Celular)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Representante)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+
+                    <a  href="~/Proveedores/Edit/@item.ProveedorID"  class="btn btn-danger btn-sm" style="background-color: #007bba; border-color: #007bba;"><i class=" fa fa-pencil-square-o"></i></a>
+
+                    <button href="#myModal" class="btnDetailsProveedor btn btn-danger btn-sm" data-toggle="modal" data-id="@item.ProveedorID" style="background-color: #28a745; border-color: #28a745;">
+                        <i class="fa fa-list-alt"></i>
+                    </button>
+                    <button href="#myModal" class="btnDeleteProveedor btn btn-danger btn-sm" data-toggle="modal" data-id="@item.ProveedorID">
+                        <i class="fa fa-trash"></i>
+                    </button>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>

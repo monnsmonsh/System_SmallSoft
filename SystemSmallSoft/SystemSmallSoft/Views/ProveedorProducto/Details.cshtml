@@ -1,0 +1,58 @@
+﻿@model SystemSmallSoft.Models.TblProveedorProducto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TblProveedorProducto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TblProductos.SKU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblProductos.SKU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblProveedores.RazonSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblProveedores.RazonSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastBuy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastBuy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cantidad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProveedorProductoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

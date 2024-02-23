@@ -1,0 +1,45 @@
+﻿
+@model IdentitySample.Models.ApplicationUser
+
+@{
+    Layout = null;
+}
+
+
+<!------------      ------------>
+<div class="card-body">
+    <div class="card-title">
+        <h3 class="text-center title-2 display-4" style="color: #dc3545;">¡¡¡ ALERTA !!!</h3>
+    </div>
+    <hr>
+
+    <!------------      ------------>
+
+
+    <div class="form-group">
+
+        <h4 class="text-center "> ¿Deseas Eliminar al usuario?</h4>
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+
+            <div>
+                <button id="payment-button" type="Delete" class="btn btn-lg btn-info btn-block">
+                    <i class="fa fa-trash fa-lg"></i>&nbsp;
+                    <span id="payment-button-amount">Eliminar</span>
+                    <span id="payment-button-sending" style="display:none;">Delete…</span>
+                </button>
+            </div>
+
+        }
+
+    </div>
+    <!------------      ------------>
+
+</div>
+<!------------      ------------>

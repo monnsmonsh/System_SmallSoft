@@ -1,0 +1,17 @@
+﻿
+
+@model SystemSmallSoft.Models.gmail
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Index", "EmailSetup", FormMethod.Post, new { encrypte = "multipart/form-data" }))
+{
+    @Html.TextBoxFor(model => model.To)
+    @Html.TextBoxFor(model => model.Subject)
+    @Html.TextAreaFor(model => model.Body, new { rows="10", col="25"})
+    <input type="submit" value="enviar" />
+}

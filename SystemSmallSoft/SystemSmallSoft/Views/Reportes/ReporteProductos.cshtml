@@ -1,0 +1,64 @@
+﻿@model IEnumerable<SystemSmallSoft.Models.TblProducto>
+
+@{
+    ViewBag.Title = "ReporteProductos";
+}
+
+<div class="row">
+    <div class="col-md-4"><img src="~/Content/img/logoSmallSoft.png" alt="" width="300"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h1 class="display-5">Reporte de Productos</h1>
+        <p class="lead2">Plaza Heroes Local B-2</p>
+        <p class="lead2">Ribera del Rio #00 Col Centro</p>
+        <p class="lead2">Telefono (477) 123 4567</p>
+        <p class="lead2">securitysystem@smallsoft.com.mx</p>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TblCategorias.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SKU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioUnitario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stock)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblCategorias.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SKU)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrecioUnitario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stock)
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+}
+
+<h1>Manejo en casacada </h1>
+<hr />
+<br />
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Estado</label>
+            <div class="col-md-6">
+                <select class="form-control" id="ddlEstado"></select><br />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">State Name</label>
+            <div class="col-md-6">
+                <select class="form-control" id="ddlMunicipio"></select>
+                <br />
+
+            </div>
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="col-md-4 control-label">City Name</label>
+            <div class="col-md-6">
+                <select class="form-control" id="ddlCity"></select>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
+
+
+
+
+
+<script src="~/Scripts/jquery-3.5.1.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+        var ddlEstado = $('#ddlEstado');
+        ddlEstado.append($("<option></option>").val('').html('Please Select Country'));
+        $.ajax({
+            url: 'https://localhost:44372/Controller/Entidades/EstadoDetails',
+            type: 'GET',
+            dataType: 'json',
+            success: function (d) {
+                $.each(d, function (i, Estadoes) {
+                    ddlEstado.append($("<option></option>").val(Estadoes.EstadoId).html(Estadoes.Nombre));
+                });
+            },
+            error: function () {
+                alert('Error!');
+            }
+        });  
+
+        //State details by country id
+
+        $("#ddlEstado").change(function () {  
+            var EstadoId = parseInt($(this).val());  
+  
+            if (!isNaN(EstadoId)) {  
+                var ddlMunicipio = $('#ddlMunicipio');  
+                ddlMunicipio.empty();  
+                ddlMunicipio.append($("<option></option>").val('').html('Please wait ...'));  
+  
+                debugger;  
+                $.ajax({  
+                    url: 'https://localhost:44372/Controller/Entidades/MunicipioDetails',  
+                    type: 'GET',  
+                    dataType: 'json',  
+                    data: { EstadoId: EstadoId },  
+                    success: function (d) {  
+  
+                        ddlMunicipio.empty(); // Clear the please wait  
+                        ddlMunicipio.append($("<option></option>").val('').html('Select State'));  
+                        $.each(d, function (i, Municipios) {  
+                            ddlMunicipio.append($("<option></option>").val(Municipios.ddlMunicipio).html(Municipios.StateName));  
+                        });  
+                    },  
+                    error: function () {  
+                        alert('Error!');  
+                    }  
+                });  
+            }  
+  
+  
+        });  
+
+        //City Bind By satate id
+        $("#ddlState").change(function () {
+            var StateId = parseInt($(this).val());
+            if (!isNaN(StateId)) {
+                var ddlCity = $('#ddlCity');
+                ddlCity.append($("<option></option>").val('').html('Please wait ...'));
+
+                debugger;
+                $.ajax({
+                    url: 'http://localhost:54188/api/Cascading/CityDetails',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: { stateId: StateId },
+                    success: function (d) {
+
+
+                        ddlCity.empty(); // Clear the plese wait
+                        ddlCity.append($("<option></option>").val('').html('Select City Name'));
+                        $.each(d, function (i, cities) {
+                            ddlCity.append($("<option></option>").val(cities.CityId).html(cities.CityName));
+                        });
+                    },
+                    error: function () {
+                        alert('Error!');
+                    }
+                });
+            }
+
+
+        });
+    });
+</script>
+

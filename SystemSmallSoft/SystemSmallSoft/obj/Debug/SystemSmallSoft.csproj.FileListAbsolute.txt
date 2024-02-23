@@ -1,0 +1,199 @@
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\SystemSmallSoft.dll.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\SystemSmallSoft.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\SystemSmallSoft.pdb
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csc.exe
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csc.exe.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csc.rsp
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csi.exe
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csi.exe.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csi.rsp
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Buffers.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Memory.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\vbc.exe
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\vbc.exe.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\vbc.rsp
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\VBCSCompiler.exe
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Antlr3.Runtime.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\EntityFramework.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\EntityFramework.SqlServer.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Newtonsoft.Json.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Owin.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Helpers.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Mvc.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Optimization.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Razor.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.Razor.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\WebGrease.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\EntityFramework.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\EntityFramework.SqlServer.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Helpers.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Mvc.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Optimization.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Razor.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.Razor.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Newtonsoft.Json.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Antlr3.Runtime.pdb
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.Helpers.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.Mvc.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.Razor.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.csproj.CoreCompileInputs.cache
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.csproj.CopyComplete
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.pdb
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.csproj.CoreCompileInputs.cache
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.pdb
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\SystemSmallSoft.dll.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\SystemSmallSoft.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\SystemSmallSoft.pdb
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csc.exe
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csc.exe.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csc.rsp
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csi.exe
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csi.exe.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\csi.rsp
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Buffers.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Memory.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\vbc.exe
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\vbc.exe.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\vbc.rsp
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\VBCSCompiler.exe
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Antlr3.Runtime.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\EntityFramework.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\EntityFramework.SqlServer.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Newtonsoft.Json.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Owin.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Helpers.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Mvc.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Optimization.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Razor.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.Razor.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\WebGrease.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\EntityFramework.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\EntityFramework.SqlServer.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Helpers.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Mvc.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Optimization.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.Razor.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\System.Web.WebPages.Razor.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Newtonsoft.Json.xml
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\Antlr3.Runtime.pdb
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.Helpers.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.Mvc.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.Razor.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyectos asp.net\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.csproj.CopyComplete
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\bin\Rotativa.dll
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.Migrations.SystemInitial.resources
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.csproj.GenerateResource.cache
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.Migrations.SystemInitial1.resources
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.Migrations.SystemInitial2.resources
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.csprojAssemblyReference.cache
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.Migrations.SystemInitial3.resources
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.Migrations.SystemInitial4.resources
+C:\Users\ItsKtyu\Desktop\Universidad\Proyecto Integrador 9no\SystemSmallSoft\SystemSmallSoft\obj\Debug\SystemSmallSoft.Migrations.SystemInitial5.resources

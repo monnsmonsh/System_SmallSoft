@@ -1,0 +1,74 @@
+﻿@model SystemSmallSoft.Models.TblCliente
+
+@{
+    Layout = null;
+}
+
+
+
+<!------------      ------------>
+<div class="card-body">
+    <div class="card-title">
+        <h3 class="text-center title-2 display-4">Detalles del Cliente</h3>
+    </div>
+    <hr>
+
+    <!------------      ------------>
+
+
+    <div class="form-group">
+        <br />
+
+        <dl class="dl-horizontal">
+            <dt>
+                Nombre
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)  @Html.DisplayFor(model => model.ApPaterno) @Html.DisplayFor(model => model.ApMaterno)
+            </dd>
+
+            <dt>
+                RFC
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.RFC)
+            </dd>
+
+            <div class="row">
+                <div class="col-4">
+                    <dt>
+                        Direccion
+                    </dt>
+                    @Html.DisplayFor(model => model.Direccion)
+                </div>
+                <div class=" col-4">
+                    <dt>
+                        Telefono
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Telefono)
+                    </dd>
+                </div>
+                <div class=" col-4">
+                    <dt>
+                        Correo
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Correo)
+                    </dd>
+                </div>
+            </div>
+            <dt>
+                Estado
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+
+        </dl>
+
+    </div>
+    <!------------      ------------>
+
+</div>
+<!------------      ------------>

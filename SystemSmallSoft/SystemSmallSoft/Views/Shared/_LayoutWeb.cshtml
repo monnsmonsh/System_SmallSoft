@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SmallSoft</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Bootstrap CSS ICON -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+</head>
+<body>
+    <!-- Agregamos en menu de nav-->
+    <!-- header -->
+    <div class="container-fluid-top header">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <!-- Logo Area -->
+                    <div class="logo animated fadeInRightBig">
+                        <div class="animated fadeInRightBig"><img width="200px" src="~/Content/img/logoSmallSoft.png" alt=""></a></div>
+                    </div>
+
+                    <!-- Search & Login Area -->
+                    <div class="search-login-area d-flex align-items-center">
+                        <!-- ICON SOCIAL -->
+                        <div class="login-area">
+                            <a href="#" class="nav-link waves-effect" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="login-area">
+                            <a href="#" class="nav-link waves-effect" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <!-- Login Area -->
+                        <div class="login-area">
+
+                            <!--<a class="btn btn-primary btn-md waves-effect waves-light"><span> ingresar</span> <i class="fa fa-lock" aria-hidden="true"></i></a>-->
+
+                            @Html.ActionLink("Login", "Login", "Account", null, new { @class = "btn btn-primary btn-md waves-effect waves-light" })
+
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <!--<a class="navbar-brand" href="#">Navbar</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item @ViewBag.InicioA">
+                    @Html.ActionLink("INICIO", "Index", "wp", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item @ViewBag.ServiciosA">
+                    @Html.ActionLink("SERVICIOS", "Servicios", "wp", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item @ViewBag.ProductosA">
+                    @Html.ActionLink("PRODUCTOS", "Productos", "wp", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item @ViewBag.AcercaA">
+                    @Html.ActionLink("ACERCA DE", "Nosotros", "wp", null, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item @ViewBag.ContactoA">
+                    @Html.ActionLink("CONTACTO", "Contacto", "wp", null, new { @class = "nav-link" })
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav nav-flex-icons">
+            @*<li class="nav-item-icon">
+                <a href="#" class="nav-link waves-effect" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link waves-effect" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link waves-effect" target="_blank">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </li>*@
+            <li class="nav-item @ViewBag.CarritoA">
+                <a href="~/wp/AgregaCarrito" class="nav-link waves-effect" target="_blank">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </li>
+
+
+
+            <!-- btn-->
+            <!--
+            <li class="nav-item">
+                <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
+                    target="_blank">
+                    <i class="fa fa-github mr-2"></i>INGRESAR
+                </a>
+            </li>
+            -->
+                    <!--
+            <li class="nav-item">
+                <a href="#" class="btn btn-primary btn-md waves-effect waves-light"><span>Login / Register</span> <i class="fa fa-lock" aria-hidden="true"></i></a>
+            </li>
+            -->
+        </ul>
+    </nav>
+    <main role="main">
+        @RenderBody()
+        <hr />
+        <!-- footer -->
+        @Html.Partial("_Footer")
+        <!-- /footer -->
+
+    </main>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

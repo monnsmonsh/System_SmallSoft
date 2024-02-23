@@ -1,0 +1,93 @@
+﻿
+
+@model IEnumerable<SystemSmallSoft.Models.TblProducto>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutWeb.cshtml";
+    <!---->ViewBag.InicioA = "active";
+}
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron" style="background-image: url(/Content/img/jumb.png); background-size: 100%;">
+    <div class="container">
+        <h1 class="display-3" _msthash="669669" _msttexthash="169715" style="color:azure;">SmallSoft</h1>
+        <p _msthash="650676" _msttexthash="24129066" style="color:aliceblue;">
+            SmallSoft es una empresa que ofrece soluciones en sistemas de seguridad
+            aplicadas a nuestro público principal PYMES e igualmente público en general,
+            como se mencionó anteriormente, fue fundada recientemente en el año 2020 en
+            León, Guanajuato...
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="~/wp/nosotros" role="button" _msthash="788814" _msttexthash="356213" style="background-color: #006def;">Más información »</a></p>
+    </div>
+</div>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Servicios</h1>
+        <p class="lead font-weight-normal">
+            Contamos con alta experiencia al servicio del Cliente para poder asistirle con las mejores opciones para seguridad. El motivo principal es lograr una perfecta alineación entre las necesidades de cada individuo y/o organización...
+        </p>
+        <a class="btn btn-outline-secondary" href="#">Ver mas ...</a>
+    </div>
+</div>
+
+<div class="jumbotron" style="background-image: url(/Content/img/about-service.png); background-size: 100%;">
+    <div class="container">
+        <h1 class="display-3" _msthash="669669" _msttexthash="169715" style="color:dimgrey;">Productos</h1>
+
+        @*<p><a class="btn btn-primary btn-lg" href="~/wp/nosotros" role="button" _msthash="788814" _msttexthash="356213" style="background-color: #007bba;">Ver mas.. »</a></p>*@
+
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="@Url.Action("getImage/")@item.ProductoID" />
+                        @*<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+
+                        <div class="card-body">
+                            <h5 class="card-title">@Html.DisplayFor(modelItem => item.Descripcion)</h5>
+                            <p class="card-text">Precio: @item.PrecioUnitario</p>
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <div class="row">
+                                    <input type="number" class="form-control numbers" min="1" step="1" value="1" />
+
+                                    @* @Html.DisplayFor(modelItem => item.Stock)*@
+                                    <br />
+                                </div>
+
+                                
+                                <div class="btn-group">
+                                    <!--    <button type="button" class="btn btn-sm btn-outline-secondary">Ver detalles</button>-->
+                                    <!--<button type="button" class="btn btn-sm btn-outline-secondary">Agregar</button>-->
+                                    <a href="#" class="agregar btn btn-sm btn-outline-secondary">Agregar</a>
+                                </div>
+                                @*<small class="text-muted">@Html.DisplayFor(modelItem => item.Stock)</small>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+
+    </div>
+</div> <!-- /container -->
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+        @*<h1 class="display-4 font-weight-normal">Servicios</h1>*@
+        <p class="lead font-weight-normal">
+            Contamos con alta experiencia al servicio del Cliente para poder asistirle con las mejores opciones para seguridad. El motivo principal es lograr una perfecta alineación entre las necesidades de cada individuo y/o organización...
+        </p>
+        <a class="btn btn-outline-secondary" href="~/wp/Productos">Ver mas ...</a>
+    </div>
+</div>

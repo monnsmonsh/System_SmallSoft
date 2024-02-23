@@ -1,0 +1,163 @@
+﻿
+@model SystemSmallSoft.Models.VentaView
+
+@{
+    ViewBag.Title = "Nueva Venta";
+    <!---->ViewBag.VentasA = "active";
+}
+
+<!-- modal large -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="largeModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-content">
+                    <!---->
+                    Cargando...
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modal large -->
+
+<br />
+<h1 class="display-4 font-weight-normal">Nueva Venta</h1>
+
+
+
+
+@using (Html.BeginForm("NewOrder", "Order", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="form-group">
+            Nombre del Cliente
+            <div class="col-md-10">
+                @Html.DropDownList("ClienteID", null, htmlAttributes: new { @class = "form-control2" })
+                @Html.ValidationMessageFor(model => model.TblClientes.ClienteID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+
+                @Html.ActionLink("Agregar Producto", "AddProducto", new { }, new { @class = "btn btn-secondary" })
+
+                @*<input type="submit" value="Create" class="btn btn-default" />*@
+            </div>
+        </div>
+    </div>
+
+
+    <table class="table table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th>Producto</th>
+                <th>@Html.DisplayNameFor(model => model.Titles.Cantidad) </th>
+                <th>@Html.DisplayNameFor(model => model.Titles.PrecioUnitario)</th>
+                <th>@Html.DisplayNameFor(model => model.Titles.SubTotal) </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                double total = 0;
+            }
+
+            @for (int i = 0; i < Model.TblProductos.Count; i++)
+            {
+                total += Model.TblProductos[i].SubTotal;
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.TblProductos[i].Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.TblProductos[i].Cantidad)
+                    </td>
+                    <td>
+                        @String.Format("{0:C}", Model.TblProductos[i].PrecioUnitario)
+                    </td>
+                    <td>
+                        @String.Format("{0:C}", Model.TblProductos[i].SubTotal)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Delete", "Delete", new { id = Model.TblProductos[i].ProductoID })
+                    </td>
+                </tr>
+
+            }
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total</th>
+                <th>@String.Format("{0:C}", total)</th>
+
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+
+
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+
+                <input type="submit" value="Registrar Compra" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+
+
+
+
+}
+<link href="~/Content/themes/base/all.css" />
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+<script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+<script>
+    $(function () {
+        $("#Cliente").autocomplete({
+            source: "/Ventas/BuscarCliente", minLength: 2
+        });
+
+
+    });
+</script>
+
+@*<script>
+        $(document).ready(function () {
+
+            var now = new Date();
+
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+            var today = now.getFullYear() + "-" + (month) + "-" + (day);
+            $("#TblClientes_FechaAlta").val(today);
+        });
+    </script>*@
+
+
+

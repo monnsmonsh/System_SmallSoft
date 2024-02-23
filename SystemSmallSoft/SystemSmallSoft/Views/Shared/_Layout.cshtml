@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SmallSoft</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- query iu-->
+    @Scripts.Render("~/bundles/jqueryui")
+    @Styles.Render("~/Content/themes/base/css")
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+
+    <script src="~/Scripts/jquery-3.5.1.js"></script>
+    <!-- query data table-->
+    <link href="~/Content/jquery.dataTables.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.dataTables.js"></script>
+    <!-- Bootstrap CSS ICON -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- main style -->
+    <link rel="stylesheet" href="~/Content/css/main-dashboard.css">
+    <link rel="stylesheet" href="~/Content/css/style.css">
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+
+
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <a class="navbar-brand col-md-3 col-lg-2 mr-0" href="#"><img width="100px" src="~/Content/img/logoSmallSoft.png" alt=""></a>
+            </ul>
+
+
+
+        </div>
+
+        @using Microsoft.AspNet.Identity
+        @if (Request.IsAuthenticated)
+        {
+            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+            {
+                @Html.AntiForgeryToken()
+            
+                <ul class="nav navbar-nav navbar-right">
+                    @*<span class="navbar-text">
+                        @Html.ActionLink("Benvenido " + User.Identity.GetUserName() + "", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                    </span>*@
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @User.Identity.GetUserName()
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="~/Manage/ChangePassword">Contraseña</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Cerrar Seccion</a>
+                        </div>
+                     </li>
+                    @*<li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar Seccion</a></li>*@
+                </ul>
+            }
+        }
+
+        @*<ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>*@
+    </nav>
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        <!--active-->
+                        <span data-feather="home"></span>
+                        Inicio <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                @*<li class="nav-item">
+            <a class="nav-link" href="#">
+                <span data-feather="file"></span>
+                Ordenes
+            </a>
+        </li>*@
+                @if (Request.IsAuthenticated && User.IsInRole("Mostrador"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.ProductosA" href="~/Productos/Index">
+                            <span data-feather="shopping-cart"></span>
+                            Productos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.VentasA" href="~/Ventas/Index">
+                            <span data-feather="bar-chart-2"></span>
+                            Ventas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.ClientesA" href="~/Clientes/Index">
+                            <span data-feather="users"></span>
+                            Clientes
+                        </a>
+                    </li>
+                }
+
+
+                @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.ProductosA" href="~/Productos/Index">
+                            <span data-feather="shopping-cart"></span>
+                            Productos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.VentasA" href="~/Ventas/Index">
+                            <span data-feather="bar-chart-2"></span>
+                            Ventas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.ClientesA" href="~/Clientes/Index">
+                            <span data-feather="users"></span>
+                            Clientes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.ProveedoresA" href="~/Proveedores/Index">
+                            <span data-feather="users"></span>
+                            Proveedores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.InventarioA" href="~/ProveedorProducto/Index">
+                            <span data-feather="layers"></span>
+                            Compras
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.UsuariosA" href="~/UsersAdmin/Index">
+                            <span data-feather="users"></span>
+                            Usuarios
+                        </a>
+                    </li>
+
+
+                }
+                @if (Request.IsAuthenticated && User.IsInRole("Almacen"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.ProductosA" href="~/Productos/Index">
+                            <span data-feather="shopping-cart"></span>
+                            Productos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.ProveedoresA" href="~/Proveedores/Index">
+                            <span data-feather="users"></span>
+                            Proveedores
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @ViewBag.InventarioA" href="~/ProveedorProducto/Index">
+                            <span data-feather="layers"></span>
+                            Compras
+                        </a>
+                    </li>
+
+                }
+
+
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                <span>Reportes</span>
+                <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                    <span data-feather="plus-circle"></span>
+                </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Reportes/ReporteClientesPrint">
+                        <span data-feather="file-text"></span>
+                        Clientes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Reportes/ReporteProductosPrint">
+                        <span data-feather="file-text"></span>
+                        Productos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Reportes/ReporteProveedoresPrint">
+                        <span data-feather="file-text"></span>
+                        Proveedores
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Reportes/ReporteVentasPrint">
+                        <span data-feather="file-text"></span>
+                        Ventas
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!--- Html.Partial("_navMain")-->
+    <!-- Agregamos en menu de nav-->
+    <!-- PAGE CONTAINER-->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        @RenderBody()
+    </main>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <!-- Scrips Dashboard-->
+    <script>window.jQuery || document.write('<script src="~/Scripts/jquery.slim.min.js"><\/script>')</script>
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="~/Scripts/dashboard.js"></script>
+    <script src="~/Scripts/js/main.js"></script>
+</body>
+
+</html>

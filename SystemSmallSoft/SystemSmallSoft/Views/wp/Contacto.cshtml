@@ -1,0 +1,126 @@
+﻿
+
+
+
+
+@model SystemSmallSoft.Models.gmail
+
+@{
+    ViewBag.Title = "Contactanos";
+    Layout = "~/Views/Shared/_LayoutWeb.cshtml";
+    <!---->ViewBag.ContactoA = "active";
+}
+
+<div class="container">
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="~/Content/img/logo.png" alt="" width="72">
+        <h2>Contactanos</h2>
+        <p class="lead">Somos una empresa dedicata al cuidado de tu seguridad</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Direccion</span>
+                <span class="badge badge-secondary badge-pill"></span>
+            </h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14892.905684531272!2d-101.5816488!3d21.0636171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa7d88da0ad8eff8a!2sUniversidad%20Tecnol%C3%B3gica%20de%20Le%C3%B3n!5e0!3m2!1ses!2smx!4v1598647886802!5m2!1ses!2smx" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                        <h6 class="my-0">SmallSoft</h6>
+                        <small class="text-muted">
+                            Universidad Tecnológica de León
+                            Blvd. Universidad Tecnológica 225, Universidad Tecnologica, San Carlos la Roncha, 37670 León, Gto.
+                        </small>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3"></h4>
+
+            @using (Html.BeginForm("Contacto", "wp", FormMethod.Post, new { encrypte = "multipart/form-data" }))
+            {
+
+                <div class="form-horizontal">
+                    <div class="form-group">
+                    email
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.To, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.To, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">asunto</label>
+                    @Html.TextBoxFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1"></label>
+                    @*<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>*@
+                    @Html.TextAreaFor(model => model.Body, new { htmlAttributes = new { @class = "form-control", @rows = "5" } })
+                </div>
+                <hr class="mb-4">
+                @*<button class="btn btn-primary btn-lg btn-block" type="submit">enviar</button>*@
+                <span style="color:green">@ViewBag.Message</span>
+
+                <input type="submit" value="enviar" class="btn btn-primary btn-lg btn-block" />
+                </div>
+
+            }
+            @*<form class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName">Apellidos</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="email">Email <span class="text-muted"></span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" value="" required>
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">enviar</button>
+        </form>*@
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+    </div> <!-- /container -->

@@ -1,0 +1,51 @@
+﻿@model IdentitySample.Models.LoginViewModel
+
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/css/main-signin.css">
+<div class="sign">
+    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-signin text-center", role = "form" }))
+    {
+        
+            <img class="mb-4" src="~/Content/img/logoSmallSoft.png" alt="" width="300">
+            @Html.AntiForgeryToken()
+            <h1 class="h3 mb-3 font-weight-normal">Ingrese sus Datos</h1>
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "sr-only" })
+                <div class="col-md-12">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "e-mail" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "sr-only" })
+                <div class="col-md-12">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "contraseña" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                </label>
+            </div>
+            <button type="submit" value="Log in" class="btn btn-lg btn-primary btn-block">INGRESAR</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
+        
+    }
+</div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

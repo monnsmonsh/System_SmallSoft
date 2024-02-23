@@ -1,0 +1,107 @@
+﻿
+@model SystemSmallSoft.Models.TblVenta
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Reportes.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4"><img class="mb-4" src="~/Content/img/logoSmallSoft.png" alt="" width="300"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <p class="lead2">Plaza Heroes Local B-2</p>
+        <p class="lead2">Ribera del Rio #00 Col Centro</p>
+        <p class="lead2">Telefono (477) 123 4567</p>
+        <p class="lead2">securitysystem@smallsoft.com.mx</p>
+    </div>
+</div>
+<br>
+<h3>Folio: @Model.Folio </h3>
+<br>
+<h1 class="lead">Datos del Cliente</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <td>@Model.TblClientes.Nombre @Model.TblClientes.ApPaterno @Model.TblClientes.ApMaterno</td>
+        </tr>
+        <tr>
+            <th>Telefono</th>
+            <td>@Model.TblClientes.Telefono </td>
+        </tr>
+        <tr>
+            <th>Correo</th>
+            <td>@Model.TblClientes.Correo </td>
+        </tr>
+        <tr>
+            <th>Fecha</th>
+            <td>@Model.FechaAlta</td>
+        </tr>
+
+        @*<tr>
+                <th>Subtotal</th>
+                <td>@Model.Subtotal</td>
+            </tr>
+            <tr>
+                <th>IVA</th>
+                <td>@Model.Iva</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td>@Model.Total</td>
+            </tr>*@
+    </thead>
+</table>
+<br />
+<h1 class="lead">Datos del Cliente</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            double total = 0;
+        }
+        @if (Model.TblDetalleVentas != null)
+        {
+            foreach (var detalle in Model.TblDetalleVentas)
+            {
+                total += detalle.Total;
+                <tr>
+                    <td>@detalle.TblProductos.Descripcion</td>
+                    <td>@String.Format("{0:C}", detalle.PrecioUnitario)</td>
+                    <td>@detalle.Cantidad</td>
+                    <td>@String.Format("{0:C}", detalle.Total)</td>
+                </tr>
+
+                
+            }
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="3">Total</th>
+            <th>@String.Format("{0:C}", total)</th>
+
+        </tr>
+    </tfoot>
+</table>
+
+@foreach (var t in Model.TblDetalleVentas)
+{
+
+<a href="PrintAll?id=@t.VentaID" target="_blank"><input type="button" class="btn btn-primary" value="Generate PDF" /></a>
+}
+<p>
+    @Html.ActionLink("Imprimir", "ReportVentaPrint")
+</p>
+<p>
+    @Html.ActionLink("Regresar", "Index")
+</p>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SmallSoft</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Bootstrap CSS ICON -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+</head>
+<body>
+    <style>
+        .display-5 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+        .lead2 {
+            font-size: .75rem;
+            font-weight: 500;
+            margin: unset;
+            text-align: center;
+        }
+    </style>
+    <main role="main">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

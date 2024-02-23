@@ -1,0 +1,68 @@
+﻿
+@model IdentitySample.Models.EditUserViewModel
+
+@{
+    Layout = null;
+}
+
+
+
+
+
+<!------------      ------------>
+<div class="card-body">
+    <div class="card-title">
+        <h3 class="text-center title-2">Editar Cliente</h3>
+    </div>
+    <hr>
+
+    <!------------      ------------>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>Datos de Usuario</h4>
+            <hr />
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Email)
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Roles", new { @class = "control-label col-md-2" })
+                <span class=" col-md-10">
+                    @foreach (var item in Model.RolesList)
+                    {
+                        <input type="checkbox" name="SelectedRole" value="@item.Value" checked="@item.Selected" class="checkbox-inline" />
+                        @Html.Label(item.Value, new { @class = "control-label" })
+                    }
+                </span>
+            </div>
+
+            <div class="form-group">
+                <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
+                    <i class="fa fa-lock fa-lg"></i>&nbsp;
+                    <span id="payment-button-amount">Guardar</span>
+                    <span id="payment-button-sending" style="display:none;">Sending…</span>
+                </button>
+            </div>
+            <!------------      ------------>
+
+
+        </div>
+    }
+    <!------------      ------------>
+</div>
+<!------------      ------------>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

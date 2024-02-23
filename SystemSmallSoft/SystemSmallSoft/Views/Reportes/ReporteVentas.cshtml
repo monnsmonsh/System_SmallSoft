@@ -1,0 +1,51 @@
+﻿
+
+@model IEnumerable<SystemSmallSoft.Models.TblVenta>
+
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Reportes.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4"><img class="mb-4" src="~/Content/img/logoSmallSoft.png" alt="" width="300"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h1 class="display-5">Reporte Ventas</h1>
+        <p class="lead2">Plaza Heroes Local B-2</p>
+        <p class="lead2">Ribera del Rio #00 Col Centro</p>
+        <p class="lead2">Telefono (477) 123 4567</p>
+        <p class="lead2">securitysystem@smallsoft.com.mx</p>
+    </div>
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">@Html.DisplayNameFor(model => model.Folio)</th>
+            <th scope="col">Cliente@*@Html.DisplayNameFor(model => model.TblClientes.Nombre)*@</th>
+            <th scope="col">@Html.DisplayNameFor(model => model.FechaAlta)</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">
+                    @Html.DisplayFor(modelItem => item.Folio)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblClientes.Nombre)
+                </td>
+                <td>@Html.DisplayFor(modelItem => item.FechaAlta)</td>
+
+            </tr>
+
+
+        }
+    </tbody>
+
+</table>
